@@ -210,7 +210,7 @@ header{
 
 .top-text{
   float: right;
-  margin: 55px 100px 0 0;
+  margin: 30px 100px 0 0;
 }
 
 .top-text h1{
@@ -228,7 +228,7 @@ header{
   background-color: #B0CA49;
   height: 3.8px;
   width: 197px;
-  top: 115px;
+  top: 90px;
 }
 
 .top-text p{
@@ -251,17 +251,17 @@ header{
 
 .about-content img{
   position: absolute;
-  width: 685px;
-  height: 545px;
-  left:656px;
-  top: 185px;
+  width: 665px;
+  height: 535px;
+  left:674px;
+  top: 165px;
 }
 
 .about-information{
   text-align:right;
   position: absolute;
   width: 520px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 100px;
 }
 
@@ -303,7 +303,7 @@ header{
   grid-column-gap: 20px;
   width: 500px;
   height: 137px;
-  top: 400px;
+  top: 350px;
   left: 142px;
 }
 
@@ -328,7 +328,7 @@ header{
 .social-button{
   display: block;
   position: absolute;
-  top: 675px;
+  top: 640px;
   left: 300px;
 }
 
@@ -353,7 +353,7 @@ header{
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 40px;
+  font-size: 55px;
   font-weight: 500;
 }
 .services-title::after{
@@ -361,9 +361,9 @@ header{
   display: block;
   position: absolute;
   border-bottom:3px solid #a1be67;
-  right: 615px;
+  right: 580px;
   padding-top: 3px;
-  width:15%;
+  width:20%;
 }
 .arrow{
   cursor: pointer;
@@ -775,7 +775,7 @@ header{
 
 .images img{
   width: 520px;
-  height: 520px;
+  height: 485px;
   margin-top:65px;
   margin-right: 90px;
 }
