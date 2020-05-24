@@ -1,5 +1,5 @@
 html{
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -685,6 +685,18 @@ header{
   text-transform: uppercase;
   font-weight: bolder;
   margin-right: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.work-info h1::before{
+  content:'';
+  display: block;
+  position: absolute;
+  top: 38px;
+  left: 372px;
+  border: 1px solid #a1be67;
+  width: 35%;
 }
 
 .work-info p:nth-child(2){
@@ -780,3 +792,79 @@ header{
   margin-right: 90px;
 }
 /* portfolio style ends here */
+
+/* latest work style start here */
+#my-latest-work{
+  height: 100%;
+  width: 100%;
+  background:#F1F4FE;
+  display: flex;
+  flex-direction: column;
+}
+
+.titles{
+  margin-top: 70px;
+  margin-bottom: 40px;
+  justify-content: center;
+  display: grid;
+}
+
+.titles h1{
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight:900;
+  text-align: center;
+  position:relative;
+}
+
+.titles h1::before{
+  content:'';
+  display: block;
+  position: absolute;
+  border: 1.5px solid #a1be67;
+  top: 45px;
+  left: 23%;
+  width:50%;
+}
+
+.titles ul {
+  display: inline-grid;
+  grid-template-columns:auto auto auto auto;
+  grid-gap: 21px;
+  margin-top:70px;
+}
+
+.titles ul li{
+  list-style: none;
+  position: relative;
+}
+
+.titles ul li a{
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.titles ul li:hover::before{
+  content:'';
+  display: block;
+  position: absolute;
+  border: 1px solid #a1be67;
+  top:25px;
+  width: 90%;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap:25px;
+  margin: 0 auto 120px auto;
+}
+
+.projects img{
+  height: 370px;
+  width: 370px;
+}
