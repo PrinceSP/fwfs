@@ -868,3 +868,63 @@ header{
   height: 370px;
   width: 370px;
 }
+/* project layout style end here */
+
+/* get in touch style starts here */
+#get-in-touch{
+  height:215px;
+  width: 100%;
+  background:#000;
+  position:relative;
+  display: flex;
+}
+
+
+.gtext{
+  height:120px;
+  width: 800px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  margin-left: 21px;
+  background:linear-gradient(177.15deg, #814646 11.32%, rgba(169, 144, 144, 0.367553) 53.28%, rgba(213, 206, 62, 0) 88.89%),#FF0000;
+}
+
+.gtext::after{
+  content:'';
+  display: block;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: #000;
+  left:695px;
+  transform: rotate(135.05deg);
+}
+
+.gtext p{
+  width: 700px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.get-more{
+  cursor: pointer;
+  height: 65px;
+  width: 185px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  position: absolute;
+  margin-top:80px;
+  left: 1200px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+}
+
+.get-more p{
+  font-size: 25px;
+}
