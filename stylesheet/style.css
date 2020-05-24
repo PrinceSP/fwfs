@@ -794,7 +794,7 @@ header{
 /* portfolio style ends here */
 
 /* latest work style start here */
-#my-latest-work{
+#my-latest-projects{
   height: 100%;
   width: 100%;
   background:#F1F4FE;
@@ -879,7 +879,6 @@ header{
   display: flex;
 }
 
-
 .gtext{
   height:120px;
   width: 800px;
@@ -928,3 +927,93 @@ header{
 .get-more p{
   font-size: 25px;
 }
+/* above's layout style end here */
+
+/* testimonial style start here */
+#testimonial{
+  height: 80vh;
+  background: #D9FAFD;
+  position:relative;
+  display: grid;
+  grid-template-areas:
+  'heading1 heading1 heading1 heading1 heading1 heading1'
+  'left left left right right right';
+}
+
+.container{
+  margin: -40px auto 0 auto;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 350px;
+  width: 600px;
+  box-shadow: 0 0 4px rgba(68, 68, 68, 0.3);
+}
+
+#testimonial > h1{
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin-top: 40px;
+  text-align: center;
+  grid-area: heading1;
+  position: relative;
+}
+
+#testimonial > h1::after{
+  content: '';
+  background: #a1be67;
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 620px;
+  height: 2px;
+  width: 200px;
+}
+
+.left{
+  grid-area: left;
+}
+
+.right{
+  grid-area: right;
+}
+
+.right p,
+.left p{
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 100px;
+  color: #888;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.right p{
+  width: 250px;
+  text-align: center;
+}
+
+.image-holder img{
+  width:250px;
+  height:250px;
+  border-radius: 50%;
+}
+.image-holder img{
+  width:250px;
+  height:250px;
+  border-radius: 50%;
+}
+/* testimonial style end here */
+
+/* blog style starts here */
+#blogs{
+  height: 100vh;
+}
+/* blog style ends here */
