@@ -941,7 +941,7 @@ header{
 }
 
 .container{
-  margin: -40px auto 0 auto;
+  margin: -50px auto 0 auto;
   background: #fff;
   display: flex;
   align-items: center;
@@ -956,7 +956,7 @@ header{
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 900;
-  margin-top: 40px;
+  margin-top: 60px;
   text-align: center;
   grid-area: heading1;
   position: relative;
@@ -966,10 +966,10 @@ header{
   content: '';
   background: #a1be67;
   display: block;
-  position: absolute;
-  top: 45px;
+  position: relative;
+  top: 5px;
   left: 620px;
-  height: 2px;
+  height:3px;
   width: 200px;
 }
 
@@ -992,7 +992,7 @@ header{
   font-style: italic;
   font-weight: normal;
   line-height: 30px;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
 .right p{
@@ -1005,15 +1005,176 @@ header{
   height:250px;
   border-radius: 50%;
 }
-.image-holder img{
-  width:250px;
-  height:250px;
-  border-radius: 50%;
-}
 /* testimonial style end here */
 
 /* blog style starts here */
 #blogs{
-  height: 100vh;
+  height: 900px;
+}
+
+#blogs > h1{
+  /* position */
+  grid-area: h1;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 45px auto 40px auto;
+  /* text style */
+  font-size: 40px;
+  line-height: 2px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+  /* size and background */
+  background: url('../images/blog/container.svg');
+  height: 94px;
+  width:782px;
+}
+
+#blogs > h1::after{
+  content:'';
+  display: block;
+  position: absolute;
+  background: url('../images/blog/Vector.svg') no-repeat;
+  width: 291px;
+  height:25px;
+  top: 65px;
+}
+
+#inner{
+  margin-top: 60px;
+}
+
+.card-view{
+  display: flex;
+  position: relative;
+}
+
+.card-view > div {
+  margin:0 auto;
+  width: 450px;
+  height: 495px;
+  border-bottom-right-radius: 19px ;
+  border-bottom-left-radius: 19px ;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25), inset 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-view .left-blog{
+  float: left;
+  margin: 85px 0 0 50px;
+  background: #747474;
+}
+.card-view .center-blog{
+  margin: 40px 50px 0 50px;
+  width: 500px;
+  height: 570px;
+  background: #494139;
+}
+.card-view .right-blog{
+  float: right;
+  margin: 85px 50px 0 0;
+  background: #ededed;
+}
+
+.card-view .left-blog img{
+  display: block;
+  object-fit: fill;
+  position: relative;
+  height:60%;
+  width: 100%;
+}
+.card-view .center-blog img{
+  display: block;
+  object-fit: cover;
+  position: relative;
+  height:70%;
+  width: 100%;
+}
+.card-view .right-blog img{
+  display: block;
+  object-fit: cover;
+  position: relative;
+  height:60%;
+  width: 100%;
+}
+.card-view > div > p{
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  margin: 7px 0 0 10px;
+}
+.left-blog > p{
+  color: #ffe5e5;
+}
+.center-blog > p{
+  color: #cecece;
+}
+.right-blog > p{
+  color: #775656;
+}
+
+.card-view .blog-titles {
+  border-radius: 4px;
+  position: relative;
+  margin: 20px auto;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card-view > div > .blog-titles p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.04em;
+  padding-top: 12px;
+}
+
+.left-blog .blog-titles{
+  width: 228px;
+  height: 39px;
+  background: #515657;
+}
+
+.center-blog .blog-titles{
+  margin: 20px auto;
+  width: 260px;
+  height: 56px;
+  background: #545858;
+}
+
+.right-blog .blog-titles{
+  width: 228px;
+  height: 39px;
+  background: #b2d0bc;
+}
+
+.left-blog .click-buttons,
+.center-blog .click-buttons,
+.right-blog .click-buttons{
+  margin: 10px auto;
+  width: 129px;
+  height: 24px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.left-blog .click-buttons{
+  background: #a17d7d;
+}
+.center-blog .click-buttons{
+  background: #7c544f;
+}
+.right-blog .click-buttons{
+  background: #8bb691;
+}
+
+.left-blog .click-buttons p,
+.center-blog .click-buttons p,
+.right-blog .click-buttons p{
+  color: #fff;
+  text-align: center;
+  padding-top: 2.5px;
 }
 /* blog style ends here */
