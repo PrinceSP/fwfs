@@ -1178,3 +1178,160 @@ header{
   padding-top: 2.5px;
 }
 /* blog style ends here */
+
+/* contact style starts here */
+#contact{
+  height: 80vh;
+  width: 100%;
+  background: #D9FAFD;
+}
+
+#contact > h1{
+  padding:25px 0 30px 0;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  color: #444;
+}
+
+#contact > h1::after{
+  content:'';
+  display: block;
+  position: relative;
+  border: 2px solid #E7C665;
+  width: 14%;
+  margin: 8px auto;
+}
+
+#contact > p{
+  margin: 30px 0 0 60px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0.04em;
+  text-transform: capitalize;
+  color: #666;
+}
+
+#contact .forms{
+  margin-top: 26px;
+  display: grid;
+  grid-template-areas:
+  "name name name email email email"
+  "comment comment comment comment comment comment"
+  "... ... ... ... ... button";
+}
+
+#contact .forms input,
+#contact .forms textarea,
+#contact .forms button{
+  background: #dcd3d3;
+  border: 1px solid rgba(220,211,211);
+}
+
+#contact .forms input:focus{
+  border: 1px solid rgba(120,111,111);
+}
+
+#contact .forms input[type=text],
+#contact .forms input[type=email]{
+  height: 70px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#contact .forms input[type=text]{
+  grid-area: name;
+}
+
+#contact .forms input[type=email]{
+  grid-area: email;
+}
+
+#contact .forms textarea{
+  grid-area: comment;
+  margin: 30px auto 0 auto;
+  width: 95%;
+  height: 160px;
+}
+
+#contact .forms input[placeholder=name],
+#contact .forms input[placeholder=email],
+#contact .forms textarea[placeholder=comment]{
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: rgba(0,0,0,0.7);
+}
+
+#contact .forms button{
+  margin-top: 30px;
+  margin-right: 35px;
+  grid-area: button;
+  border:none;
+  border-radius: 21px;
+  height:50px;
+  font-size: 24px;
+  color: #fff;
+}
+/* contact style end here */
+
+/* footer style starts here */
+footer{
+  height:370px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+footer > p{
+  width: 100%;
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom:10px;
+  font-size: 19px;
+  color: #999;
+}
+
+footer .links-container{
+  height: 300px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+footer .links-container > div{
+  height: 100%;
+  width: 250px;
+  margin:0 auto;
+}
+
+footer .links-container > div ul{
+  width: 100%;
+  margin-top: 21px;
+}
+
+footer .links-container > div li{
+  list-style: none;
+  margin-top: 19px;
+  font-size: 20px;
+  line-height: 37px;
+}
+
+footer .links-container > div li a{
+  text-decoration: none;
+  color: #888;
+}
+
+footer .links-container > div h1{
+  letter-spacing: 0.1em;
+  font-size: 40px;
+  font-weight: normal;
+  color: #aaa;
+}
