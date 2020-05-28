@@ -8,52 +8,6 @@ html{
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-@keyframes dot-texts {
-  from{height:0;}
-  to{height:250px;}
-}
-@keyframes texts-P {
-  0%{font-size: 0;padding-left: 0;}
-  50%{padding-left: 40px;font-size: 28px;}
-}
-@keyframes download-hover {
-  25%{background: #2ecc71;}
-  50%{background: #74b9ff;}
-  75%{background: #fab1a0;}
-  100%{background: #4cd137;}
-}
-@keyframes download-button {
-  from{
-    top: 200px;
-    left: -200px;
-  }
-  to{
-    top: 0;
-    left: 0;
-  }
-}
-@keyframes m-box {
-  from{
-    border-bottom: none;
-    top: -80px;
-  }
-  to{
-    top: 0;
-    border-bottom: 1px;
-  }
-}
-@keyframes mbx {
-  0%{
-    transform: scale(0);
-    transform-origin: center;
-    transition: transform .7s;
-  }
-  100%{
-    transform: scale(1);
-    transform-origin: center;
-    transition: transform .7s;
-  }
-}
 
 /* header style start here */
 header{
@@ -1078,27 +1032,23 @@ header{
   background: #ededed;
 }
 
-.card-view .left-blog img{
+.card-view > div > img{
   display: block;
-  object-fit: fill;
   position: relative;
+  object-fit: cover;
   height:60%;
   width: 100%;
 }
+
+.card-view .left-blog img{
+  object-fit: fill;
+}
+
 .card-view .center-blog img{
-  display: block;
-  object-fit: cover;
-  position: relative;
   height:70%;
   width: 100%;
 }
-.card-view .right-blog img{
-  display: block;
-  object-fit: cover;
-  position: relative;
-  height:60%;
-  width: 100%;
-}
+
 .card-view > div > p{
   font-size: 13px;
   letter-spacing: 0.04em;
@@ -1335,3 +1285,53 @@ footer .links-container > div h1{
   font-weight: normal;
   color: #aaa;
 }
+/* footer style end here */
+
+/* all animation style starts here */
+@keyframes dot-texts {
+  from{height:0;}
+  to{height:250px;}
+}
+@keyframes texts-P {
+  0%{font-size: 0;padding-left: 0;}
+  50%{padding-left: 40px;font-size: 28px;}
+}
+@keyframes download-hover {
+  25%{background: #2ecc71;}
+  50%{background: #74b9ff;}
+  75%{background: #fab1a0;}
+  100%{background: #4cd137;}
+}
+@keyframes download-button {
+  from{
+    top: 200px;
+    left: -200px;
+  }
+  to{
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes m-box {
+  from{
+    border-bottom: none;
+    top: -80px;
+  }
+  to{
+    top: 0;
+    border-bottom: 1px;
+  }
+}
+@keyframes mbx {
+  0%{
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform .7s;
+  }
+  100%{
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform .7s;
+  }
+}
+/* end of animation style */
