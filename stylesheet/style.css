@@ -1179,6 +1179,10 @@ header{
   border: 1px solid rgba(220,211,211);
 }
 
+#contact .forms button{
+  cursor: pointer;
+}
+
 #contact .forms input:focus,#contact .forms textarea:focus{
   border: 1px solid rgba(120,111,111);
 }
@@ -1210,7 +1214,6 @@ header{
 #contact .forms textarea[placeholder=comment]{
   text-align: center;
   font-size: 30px;
-  text-transform: capitalize;
   color: rgba(0,0,0,0.7);
 }
 
