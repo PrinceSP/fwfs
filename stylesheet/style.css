@@ -1179,7 +1179,7 @@ header{
   border: 1px solid rgba(220,211,211);
 }
 
-#contact .forms input:focus{
+#contact .forms input:focus,#contact .forms textarea:focus{
   border: 1px solid rgba(120,111,111);
 }
 
